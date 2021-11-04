@@ -7,7 +7,7 @@ function TopPosts() {
 
       <div className="top-posts__body">
         <div className="post">
-          <img src="/img/lamp-img.png" alt="lamp" />
+          <img src="/img/lamp-img.png" alt="lamp" style={{width: "100%"}} />
           <p className="article-date">Feb 23 · 8 min read</p>
           <p className="article-header">Professional Repot</p>
           <p>Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can
@@ -15,7 +15,7 @@ function TopPosts() {
         </div>
 
         <div className="post">
-          <img src="/img/sprout-img.png" alt="sprout" />
+          <img src="/img/sprout-img.png" alt="sprout" style={{width: "100%"}} />
           <p className="article-date">Feb 23 · 8 min read</p>
           <p className="article-header">Professional Repot</p>
           <p>Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can

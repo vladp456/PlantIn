@@ -6,7 +6,7 @@ function NewPost() {
       <img src="/img/flag.png" alt="flag" />
 
       <div className="new-post__elem">
-        <img src="/img/hand-img.png" alt="hand" />
+        <img src="/img/hand-img.png" alt="hand" style={{width: "100%"}} />
 
         <div className="new-post__article">
           <p className="article-date">Feb 23 · 8 min read</p>

@@ -19,7 +19,7 @@ function MainPosts({posts}) {
   }
 
   return (
-    <div className="interesting-pots">
+    <div className="interesting-posts">
       <p className="block-header">Interesting</p>
 
       <div className="interesting-posts__body">

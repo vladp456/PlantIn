@@ -22,7 +22,10 @@ function Search({searchValue, onChangeSearchInput}) {
     <div className="search">
       <div className="search-text">
         <p className="search-header">Stay always tuned with planting trends</p>
-        <p className="search-temperature">Current temperature is: {Math.round(temperature.temp)}°C</p>
+        <p className="search-temperature search-adapt">Tips & Tricks selected specially for you!</p>
+        <p className="search-temperature">
+          Current temperature is: {Math.round(temperature.temp)}°C
+        </p>
         <div className="search-input">
           <input
             onChange={onChangeSearchInput}

@@ -57,7 +57,7 @@ function App() {
       <div className="container">
         <ul className="breadcrumb">
           <li className="breadcrumb-item"><a href="#">Home</a></li>
-          <li className="breadcrumb-item"><a href="#">Blog</a></li>
+          <li className="breadcrumb-item breadcrumb-adapt"><a href="#">Blog</a></li>
         </ul>
         <Search
           onChangeSearchInput={onChangeSearchInput}
