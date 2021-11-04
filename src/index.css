@@ -216,7 +216,7 @@ hr {
   margin-bottom: 16px;
 }
 
-.interesting-posts__body {
+.interesting-posts__body, .scroll-items {
   display: flex;
   flex-wrap: wrap;
 }
