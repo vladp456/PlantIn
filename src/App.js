@@ -9,18 +9,18 @@ import SearchItems from "./components/SearchItems";
 import Post from "./components/Post";
 
 const posts = [
-  {id: 1, image: '/img/can-img.png', date: 'Feb 23 · 8 min read', header: 'Watering mastery', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
-  {id: 2, image: '/img/table-img.png', date: 'Feb 23 · 8 min read', header: 'Plant pot secrets', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
-  {id: 3, image: '/img/plants-img.png', date: 'Feb 23 · 8 min read', header: 'Professional Repot', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
-  {id: 4, image: '/img/can-img.png', date: 'Feb 23 · 8 min read', header: 'Watering mastery', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
-  {id: 5, image: '/img/plants-img.png', date: 'Feb 23 · 8 min read', header: 'Professional Repot', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
+  {id: 1, image: '/img/table-img.png', date: 'Feb 23 · 8 min read', header: 'Plant pot secrets', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
+  {id: 2, image: '/img/plants-img.png', date: 'Feb 23 · 8 min read', header: 'Professional Repot', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
+  {id: 3, image: '/img/can-img.png', date: 'Feb 23 · 8 min read', header: 'Watering mastery', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
+  {id: 4, image: '/img/plants-img.png', date: 'Feb 23 · 8 min read', header: 'Professional Repot', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
+  {id: 5, image: '/img/can-img.png', date: 'Feb 23 · 8 min read', header: 'Watering mastery', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
   {id: 6, image: '/img/table-img.png', date: 'Feb 23 · 8 min read', header: 'Plant pot secrets', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
   {id: 7, image: '/img/table-img.png', date: 'Feb 23 · 8 min read', header: 'Plant pot secrets', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
   {id: 8, image: '/img/plants-img.png', date: 'Feb 23 · 8 min read', header: 'Professional Repot', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
   {id: 9, image: '/img/can-img.png', date: 'Feb 23 · 8 min read', header: 'Watering mastery', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
   {id: 10, image: '/img/plants-img.png', date: 'Feb 23 · 8 min read', header: 'Professional Repot', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
   {id: 11, image: '/img/can-img.png', date: 'Feb 23 · 8 min read', header: 'Watering mastery', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
-  {id: 12, image: '/img/table-img.png', date: 'Feb 23 · 8 min read', header: 'Plant pot secrets', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'},
+  {id: 12, image: '/img/table-img.png', date: 'Feb 23 · 8 min read', header: 'Plant pot secrets', text: 'Repotting a plant can seem like a difficult task because a lot of things can go wrong – you can damage...'}
 ];
 
 function App() {

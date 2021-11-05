@@ -153,7 +153,7 @@ hr {
 .breadcrumb {
   display: flex;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   margin-top: 10px;
 
   @media (max-width: 750px) {
@@ -189,11 +189,12 @@ hr {
   align-items: center;
   background: rgba(4, 191, 148, 0.16);
   border-radius: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 
-  @media (max-width: 940px) {
+  @media (max-width: 970px) {
     .search-text input {
       width: 400px;
+      background-position: 355px 8px;
     }
   }
 
@@ -212,12 +213,26 @@ hr {
 
     .search-text input {
       width: 100%;
+      background-position: 605px 8px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .search-text input {
+      width: 400px;
+      background-position: 355px 8px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .search-text input {
+      width: 260px;
+      background-position: 215px 8px;
     }
   }
 }
 
 .search-items {
-  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -230,7 +245,6 @@ hr {
 .search-text input {
   width: 522px;
   height: 56px;
-  background: #ffffff;
   box-shadow: 0 0.470434px 2.21381px rgba(0, 0, 0, 0.0196802);
   border-radius: 12px;
   border: none;
@@ -241,6 +255,7 @@ hr {
 
 .search-text input::placeholder {
   color: #91a0b6;
+  font-size: 16px;
 }
 
 .search-header {
@@ -263,13 +278,9 @@ hr {
 }
 
 .search-input {
-  position: relative;
-}
-
-.search-input img {
-  position: absolute;
-  top: 18px;
-  right: 145px;
+  background-image: url('search-icon.png');
+  background-position: 480px 8px;
+  background-repeat: no-repeat;
 }
 
 .new-post {
@@ -291,7 +302,7 @@ hr {
 
 .new-post__elem {
   display: flex;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
 }
 
 .new-post__article {
@@ -334,6 +345,10 @@ hr {
       display: flex;
       flex-direction: column;
     }
+
+    .post {
+      margin-right: 0;
+    }
   }
 }
 
@@ -343,14 +358,79 @@ hr {
 
 .post {
   margin-right: 32px;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
+}
+
+.post-adapt {
+  margin-bottom: 40px;
 }
 
 .post img {
   margin-bottom: 16px;
 }
 
-.interesting-posts {
+.block {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #cfede6 7.49%, rgba(140, 222, 203, 0.832667) 100%);
+  border-radius: 12px;
+  margin-bottom: 40px;
+
+  @media (max-width: 700px) {
+    .block-img {
+      display: none;
+    }
+
+    .block-elem button {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .block-elem button {
+      width: 260px;
+    }
+  }
+}
+
+.block-elem {
+  margin-left: 20px;
+}
+
+.block-elem img {
+  margin-top: 10px;
+}
+
+.block-elem button {
+  width: 156px;
+  height: 40px;
+  background: #04bf94;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.elem-header {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  color: #04bf94;
+  margin-top: 27px;
+  margin-bottom: 15px;
+}
+
+.elem-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.interesting-posts, .search-items {
   @media (max-width: 1010px) {
     .main-posts {
       width: calc((100% - 10px) / 2);
@@ -377,7 +457,7 @@ hr {
   }
 }
 
-.interesting-posts__body, .scroll-items {
+.interesting-posts__body, .scroll-items, .static-posts {
   display: flex;
   flex-wrap: wrap;
 }
@@ -390,44 +470,6 @@ hr {
 .main-posts:nth-child(3n-1) {
   margin-left: 30px;
   margin-right: 30px;
-}
-
-.adv {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(90deg, #cfede6 7.49%, rgba(140, 222, 203, 0.832667) 100%);
-  border-radius: 12px;
-  margin-bottom: 56px;
-}
-
-.adv-text {
-  margin-left: 40px;
-}
-
-.adv-text__header {
-  font-weight: 600;
-  font-size: 32px;
-  color: #04bf94;
-  margin-top: 27px;
-  margin-bottom: 20px;
-}
-
-.adv-text__elem {
-  font-weight: 500;
-  font-size: 24px;
-  color: #000000;
-  margin-bottom: 24px;
-}
-
-.adv-text button {
-  width: 156px;
-  height: 40px;
-  background: #04bf94;
-  border-radius: 8px;
-  color: white;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
 }
 
 .footer {
@@ -450,7 +492,7 @@ hr {
     }
 
     .links a {
-      margin-right: 0px;
+      margin-right: 0;
     }
 
     .link-border {

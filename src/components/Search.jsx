@@ -26,15 +26,13 @@ function Search({searchValue, onChangeSearchInput}) {
         <p className="search-temperature">
           Current temperature is: {Math.round(temperature.temp)}°C
         </p>
-        <div className="search-input">
-          <input
-            onChange={onChangeSearchInput}
-            value={searchValue}
-            type="text"
-            placeholder="Search"
-          />
-          <img src="/img/search.png" alt="search icon" />
-        </div>
+        <input
+          className="search-input"
+          onChange={onChangeSearchInput}
+          value={searchValue}
+          type="text"
+          placeholder="Search"
+        />
       </div>
 
       <div className="search-img">

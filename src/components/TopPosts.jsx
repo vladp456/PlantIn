@@ -14,7 +14,7 @@ function TopPosts() {
             damage...</p>
         </div>
 
-        <div className="post">
+        <div className="post-adapt">
           <img src="/img/sprout-img.png" alt="sprout" style={{width: "100%"}} />
           <p className="article-date">Feb 23 · 8 min read</p>
           <p className="article-header">Professional Repot</p>
