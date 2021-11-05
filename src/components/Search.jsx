@@ -7,7 +7,7 @@ function Search({searchValue, onChangeSearchInput}) {
   useEffect(() => {
     async function fetchData() {
       try {
-        await axios.get('http://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=c39746580aefa7518aa5aef5e6a680cb&units=metric')
+        await axios.get('https://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=c39746580aefa7518aa5aef5e6a680cb&units=metric')
           .then((res) => {
             setTemperature(res.data.main);
           });
