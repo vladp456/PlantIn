@@ -40,15 +40,23 @@ function App() {
 
   const renderItems = () => {
     const filtredItems = posts.filter((item) => item.header.toLowerCase().includes(getValue()));
-    return filtredItems.map((item) => (
-      <Post
-        key={item.id}
-        image={item.image}
-        date={item.date}
-        header={item.header}
-        text={item.text}
-      />
-    ));
+    if (filtredItems.length > 0) {
+      return filtredItems.map((item) => (
+        <Post
+          key={item.id}
+          image={item.image}
+          date={item.date}
+          header={item.header}
+          text={item.text}
+        />
+      ));
+    } else {
+      return <div>
+        <NewPost />
+        <TopPosts />
+        <MainPosts posts={posts} />
+      </div>
+    }
   }
 
   return (
@@ -65,9 +73,6 @@ function App() {
           setSearchValue={setSearchValue}
         />
         <SearchItems renderItems={renderItems} />
-        <NewPost />
-        <TopPosts />
-        <MainPosts posts={posts} />
         <Footer />
       </div>
     </div>
